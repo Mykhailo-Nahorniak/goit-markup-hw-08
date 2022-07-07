@@ -1,0 +1,43 @@
+.gallery-section {
+  padding-top: 0;
+}
+
+.gallery__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $header-color;
+  margin-bottom: 50px;
+}
+
+.gallery {
+  @include df;
+  gap: 30px;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__text-cont {
+  position: absolute;
+  bottom: 0;
+
+  @include df;
+
+  width: 100%;
+  min-height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.gallery__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $btn-text-accent-color;
+}

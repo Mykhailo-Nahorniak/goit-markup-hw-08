@@ -1,0 +1,37 @@
+.contact-list {
+  margin-left: auto;
+}
+
+.contact-list__link {
+  @include df(normal);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: $text-color;
+}
+
+%contact-icon {
+  fill: $text-color;
+  margin-right: 10px;
+}
+
+.contact-icon-envelope {
+  @extend %contact-icon;
+  width: 16px;
+  height: 12px;
+}
+
+.contact-icon-tel {
+  @extend %contact-icon;
+  width: 10px;
+  height: 16px;
+}
+
+.contact-list__item:not(:first-child) {
+  margin-left: 50px;
+}

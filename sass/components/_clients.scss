@@ -1,0 +1,50 @@
+.clients__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $header-color;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-list__item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients__link {
+  @include df;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  border: 1px solid $thumb-color;
+  border-radius: 4px;
+
+  @include trans(border);
+  &:hover,
+  &:focus {
+    outline: transparent;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+  }
+}
+
+.clients__trumb {
+  fill: $thumb-color;
+  width: 106px;
+  height: 60px;
+
+  @include trans(fill);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
+}

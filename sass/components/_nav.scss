@@ -1,0 +1,17 @@
+.nav-list__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.nav-list {
+  margin-left: 93px;
+}
+
+.nav-list__item {
+  display: block;
+}
+
+.nav-list__item:not(:first-child) {
+  margin-left: 50px;
+}

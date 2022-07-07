@@ -1,0 +1,35 @@
+@mixin trans($attribute) {
+  transition: $attribute 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin df($j-val: center, $a-val: center) {
+  display: flex;
+  justify-content: $j-val;
+  align-items: $a-val;
+}
+
+%button {
+  min-width: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: $btn-text-accent-color;
+  cursor: pointer;
+  background-color: $accent-color;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 24px;
+
+  @include trans(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

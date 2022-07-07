@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__trumb {
+  height: 20px;
+  width: 20px;
+  fill: $thumb-color;
+
+  @include trans(fill);
+
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: $fill-color;
+  }
+  .connect & {
+    fill: $fill-color;
+  }
+}

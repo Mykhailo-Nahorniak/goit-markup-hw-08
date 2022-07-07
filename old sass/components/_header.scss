@@ -1,0 +1,53 @@
+.header {
+  border: 1px #ececec;
+  border-bottom-style: solid;
+}
+
+.header-flex,
+.nav-list,
+.contact-list {
+  display: flex;
+}
+
+.header-flex {
+  align-items: center;
+}
+
+.link,
+.link:visited {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+
+  color: $header-color;
+}
+
+.link:hover,
+.link:focus {
+  color: $accent-color;
+}
+
+.link:hover .icon-hover,
+.link:focus .icon-hover {
+  fill: currentColor;
+}
+
+.link.current {
+  color: $accent-color;
+  position: relative;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+  }
+}

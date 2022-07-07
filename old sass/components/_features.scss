@@ -1,7 +1,18 @@
+.features {
+  display: flex;
+  gap: 30px;
+}
+
+.features__item {
+  width: calc((100% - 90px) / 4);
+}
+
 .features__icon-container {
   @include df;
-  background: $icon-cont-bg;
+
   height: 120px;
+  background: $icon-cont-bg;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -13,18 +24,11 @@
 .features__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.43;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
-  color: $header-color;
+  color: var(--header-color);
   margin-bottom: 10px;
-}
-
-.features__item:not(:last-child) {
-  @media screen and (min-width: $tel) {
-    margin-bottom: 30px;
-  }
 }
 
 .features__text {

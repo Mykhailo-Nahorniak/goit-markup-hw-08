@@ -1,0 +1,188 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  @include trans(opacity);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  background-color: $body-bg-color;
+  padding: 40px;
+
+  @include trans(transform);
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  line-height: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  @include df;
+
+  margin-left: auto;
+  cursor: pointer;
+  background-color: transparent;
+
+  @include trans(transform);
+
+  &:hover,
+  &:focus {
+    outline: 1px solid #2196f3;
+    transform: scale(1.05);
+  }
+}
+
+.close-btn__svg-cont {
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  @include trans(transform);
+
+  .close-btn:hover &,
+  .close-btn:focus & {
+    transform: scale(1.05) rotate(270deg);
+  }
+}
+
+.close-btn__svg {
+  display: block;
+  fill: #000000;
+  transform-origin: 18px 18px;
+
+  .close-btn:hover &,
+  .close-btn:focus & {
+    fill: $accent-color;
+  }
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $header-color;
+  text-align: center;
+}
+
+.form {
+  margin-top: 10px;
+}
+.form__container {
+  margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.input__label {
+  display: block;
+  max-height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: $text-color;
+}
+
+.input__field {
+  position: relative;
+  margin-top: 4px;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 42px;
+  outline: transparent;
+
+  @include trans(border);
+
+  &:focus-visible {
+    border: 1px solid #2196f3;
+  }
+}
+
+.input__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  @include trans(fill);
+  .input:focus-visible + & {
+    fill: $accent-color;
+  }
+}
+
+.comment {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  resize: none;
+  padding: 12px 16px;
+  outline: transparent;
+
+  @include trans(border);
+
+  &:focus-visible {
+    border: 1px solid $accent-color;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.submit-btn {
+  @extend %button;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  height: 50px;
+}

@@ -39,15 +39,26 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: $tel;
+
+  @media screen and (min-width: $tabl) {
+    width: $tabl;
+  }
+  @media screen and (min-width: $desk) {
+    width: $desk;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: $tel) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 img {

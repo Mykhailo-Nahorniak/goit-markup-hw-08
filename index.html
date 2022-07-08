@@ -38,6 +38,7 @@
               width="40px"
               height="40px"
               aria-label="Переключатель мобильного меню"
+              class="menu-btn__icon"
             >
               <use
                 class="icon-menu"
@@ -69,10 +70,26 @@
             </ul>
           </nav>
           <ul class="contact-list list">
+            <li class="">
+              <ul class="mobile-socials list">
+                <li class="mobile-socials__item">
+                  <a href="" class="link">Instagram</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="" class="link">Twitter</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="" class="link">Facebook</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="" class="link">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
             <li class="contact-list__item">
               <a
                 href="mailto:info@devstudio.com"
-                class="contact-list__link link"
+                class="contact-list__link link mob-mail"
                 ><svg class="contact-icon-envelope icon-hover">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -80,7 +97,9 @@
               >
             </li>
             <li class="contact-list__item">
-              <a href="tel:+380961111111" class="contact-list__link link"
+              <a
+                href="tel:+380961111111"
+                class="contact-list__link mob-tel link"
                 ><svg class="contact-icon-tel icon-hover">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -596,7 +615,7 @@
                   <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю &nbsp;
+              Соглашаюсь с рассылкой и принимаю&nbsp;
               <a href="/" class="checkbox__link">Условия договора</a></label
             >
           </div>

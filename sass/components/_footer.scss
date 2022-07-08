@@ -3,9 +3,20 @@
   padding: 60px 0px;
 }
 
+.footer-flex {
+  @media screen and (min-width: $tabl) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
 .footer__container {
   text-align: center;
   margin-bottom: 60px;
+  @media screen and (min-width: $tabl) {
+    width: calc(100% / 2);
+  }
 }
 
 .address__text {
@@ -35,7 +46,11 @@
 .connect {
   margin-right: auto;
   margin-bottom: 60px;
+  @media screen and (min-width: $tabl) {
+    margin-left: auto;
+  }
 }
+
 .connect__title,
 .subscribe__title {
   font-weight: 700;
@@ -47,6 +62,14 @@
 
   color: $btn-text-accent-color;
   margin-bottom: 20px;
+}
+
+.subscribe {
+  @media screen and (min-width: $tabl) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe__btn {

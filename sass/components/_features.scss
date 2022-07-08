@@ -19,10 +19,25 @@
   text-transform: uppercase;
   color: $header-color;
   margin-bottom: 10px;
+  @media screen and (min-width: $tabl) {
+    text-align: left;
+  }
+}
+
+.features {
+  @media screen and (min-width: $tabl) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.features__item {
+  width: calc((100% - 30px) / 2);
 }
 
 .features__item:not(:last-child) {
-  @media screen and (min-width: $tel) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
 }

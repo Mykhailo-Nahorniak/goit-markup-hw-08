@@ -33,7 +33,9 @@
 }
 
 .features__item {
-  width: calc((100% - 30px) / 2);
+  @media screen and (min-width: $tabl) {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .features__item:not(:last-child) {

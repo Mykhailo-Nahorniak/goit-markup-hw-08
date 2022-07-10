@@ -57,10 +57,10 @@ ul {
 .section {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (max-width: 767px) {
     width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 

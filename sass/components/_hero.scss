@@ -1,5 +1,8 @@
 .hero {
   padding: 120px 0px;
+  @media screen and (min-width: $desk) {
+    padding: 200px 0px;
+  }
 }
 .hero-img {
   background-image: linear-gradient(
@@ -12,9 +15,64 @@
   height: 400px;
   margin-left: auto;
   margin-right: auto;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/tel-hero-img@2x.jpg);
+  }
 
   @media screen and (min-width: $tabl) {
-    max-width: 768px;
+    max-width: $tabl;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero_768.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero_768@2x.jpg);
+  }
+
+  @media screen and (min-width: $desk) {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero_1200.jpg);
+    height: 600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero_1200@2x.jpg);
+    }
   }
 }
 
@@ -33,6 +91,13 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $desk) {
+    max-width: 700px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-btn {

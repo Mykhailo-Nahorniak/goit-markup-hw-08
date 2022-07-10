@@ -182,34 +182,50 @@
           <h2 class="gallery__title">Чем мы занимаемся</h2>
           <ul class="gallery list">
             <li class="gallery__item">
-              <img
-                src="./images/hands.jpg"
-                alt="Руки на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/hands.jpg 1x, ./images/hands@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/hands.jpg" alt="Руки на клавиатуре" />
+              </picture>
+
               <div class="gallery__text-cont">
                 <p class="gallery__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="gallery__item">
-              <img
-                src="./images/phone.jpg"
-                alt="Телефон на против монитора"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/phone.jpg"
+                  alt="Телефон на против монитора"
+                />
+              </picture>
               <div class="gallery__text-cont">
                 <p class="gallery__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="gallery__item">
-              <img
-                src="./images/picker.jpg"
-                alt="Цветовая палитра на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/picker.jpg 1x, ./images/picker@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/picker.jpg"
+                  alt="Цветовая палитра на планшете"
+                />
+              </picture>
+
               <div class="gallery__text-cont">
                 <p class="gallery__text">Дизайнерские решения</p>
               </div>
@@ -224,11 +240,38 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                src="./images/tel-igor_demianenko.jpg"
-                alt="Игорь Демяненко"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/igor_demianenko__desk.jpg    1x,
+                    ./images/team/igor_demianenko__desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor_demianenko__tabl.jpg    1x,
+                    ./images/team/igor_demianenko__tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor_demianenko__tel.jpg    1x,
+                    ./images/team/igor_demianenko__tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/igor_demianenko__tel.jpg"
+                  alt="Игорь Демяненко"
+                  width="100%"
+                />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__name">Игорь Демяненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -265,11 +308,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/olha_repina.jpg"
-                alt="Ольга Репина"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/olha_repina__desk.jpg    1x,
+                    ./images/team/olha_repina__desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olha_repina__tabl.jpg    1x,
+                    ./images/team/olha_repina__tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olha_repina__tel.jpg    1x,
+                    ./images/team/olha_repina__tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/olha_repina__tel.jpg"
+                  alt="Ольга Репина"
+                  width="100%"
+                />
+              </picture>
               <div class="team__container">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -306,11 +375,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/nikolai_tarasov.jpg"
-                alt="Николай Тарасов"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/nikolai_tarasov__desk.jpg    1x,
+                    ./images/team/nikolai_tarasov__desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolai_tarasov__tabl.jpg    1x,
+                    ./images/team/nikolai_tarasov__tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolai_tarasov__tel.jpg    1x,
+                    ./images/team/nikolai_tarasov__tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/nikolai_tarasov__tel.jpg"
+                  alt="Николай Тарасов"
+                  width="100%"
+                />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -347,11 +443,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/mihail_ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mihail_ermakov__desk.jpg    1x,
+                    ./images/team/mihail_ermakov__desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mihail_ermakov__tabl.jpg    1x,
+                    ./images/team/mihail_ermakov__tabl@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mihail_ermakov__tel.jpg    1x,
+                    ./images/team/mihail_ermakov__tel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team/mihail_ermakov__tel.jpg"
+                  alt="Михаил Ермаков"
+                  width="100%"
+                />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>

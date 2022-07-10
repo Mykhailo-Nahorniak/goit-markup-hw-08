@@ -13,11 +13,21 @@
   @media screen and (min-width: $tel) {
     margin-bottom: 30px;
   }
+  @media screen and (min-width: $desk) {
+    margin-bottom: 50px;
+  }
 }
 
 .team__container {
   padding: 24px 0px;
-  margin-bottom: 30px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desk) {
+    padding: 30px 0px;
+  }
 }
 
 .team {
@@ -26,12 +36,22 @@
     flex-wrap: wrap;
     gap: 30px;
   }
+
+  @media screen and (min-width: $desk) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .team__item {
   max-width: 450px;
+
   @media screen and (min-width: $tabl) {
     max-width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desk) {
+    max-width: calc((100% - 90px) / 4);
   }
 
   background-color: $body-bg-color;

@@ -9,13 +9,22 @@
     flex-wrap: wrap;
     align-items: baseline;
   }
+  @media screen and (min-width: $desk) {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer__container {
   text-align: center;
   margin-bottom: 60px;
-  @media screen and (min-width: $tabl) {
+  @media screen and (min-width: $tabl) and (max-width: 1199px) {
     width: calc(100% / 2);
+  }
+  @media screen and (min-width: $desk) {
+    text-align: left;
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -29,13 +38,23 @@
 
   margin-bottom: 8px;
 }
+
 .address-list__item:not(:last-child) {
   margin-bottom: 8px;
+
+  @media screen and (min-width: $desk) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-list__link {
   font-style: normal;
   color: $footer-contact-color;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
   &:hover,
   &:focus {
@@ -46,8 +65,13 @@
 .connect {
   margin-right: auto;
   margin-bottom: 60px;
+
   @media screen and (min-width: $tabl) {
     margin-left: auto;
+  }
+  @media screen and (min-width: $desk) {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -62,13 +86,22 @@
 
   color: $btn-text-accent-color;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desk) {
+    text-align: left;
+  }
 }
 
 .subscribe {
-  @media screen and (min-width: $tabl) {
+  @media screen and (min-width: $tabl), screen and (max-width: 1199) {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: $desk) {
+  .subscribe__form {
+    display: flex;
   }
 }
 
@@ -101,6 +134,12 @@
   padding-left: 16px;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desk) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 
   &:focus-visible {
     outline: $accent-color auto 1px;

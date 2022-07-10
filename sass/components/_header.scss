@@ -3,11 +3,12 @@
     border: 1px #ececec;
     border-bottom-style: solid;
   }
-}
-
-.header-flex {
   position: relative;
 }
+
+// .header-flex {
+//   position: relative;
+// }
 
 .nav-list,
 .contact-list,
@@ -63,6 +64,9 @@
   }
 }
 
+.noscroll {
+  overflow: hidden;
+}
 .menu-btn {
   display: inline-flex;
 

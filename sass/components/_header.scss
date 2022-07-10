@@ -79,6 +79,15 @@
   border: none;
   background-color: transparent;
   z-index: 5;
+
+  &:focus .icon-menu,
+  &:hover .icon-menu {
+    fill: $accent-color;
+  }
+  &:focus .icon-close,
+  &:hover .icon-close {
+    fill: $accent-color;
+  }
 }
 
 .menu-btn .icon-close {
@@ -95,12 +104,7 @@
 .icon-close,
 .icon-menu {
   fill: currentColor;
-}
-
-.menu-btn__icon {
-  &:focus {
-    fill: $accent-color;
-  }
+  @include trans(fill);
 }
 
 .nav-list {
@@ -194,7 +198,13 @@
 
 @media screen and (max-width: 767px) {
   .contact-list__item:not(:first-child) {
-    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+  .contact-list__item:first-child {
+    margin-top: 64px;
+  }
+  .contact-list__item:last-child {
+    margin-top: 0;
   }
 }
 

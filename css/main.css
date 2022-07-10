@@ -465,6 +465,12 @@ img {
     display: none;
   }
 }
+.menu-btn:focus .icon-menu, .menu-btn:hover .icon-menu {
+  fill: #2196f3;
+}
+.menu-btn:focus .icon-close, .menu-btn:hover .icon-close {
+  fill: #2196f3;
+}
 
 .menu-btn .icon-close {
   display: none;
@@ -481,10 +487,7 @@ img {
 .icon-close,
 .icon-menu {
   fill: currentColor;
-}
-
-.menu-btn__icon:focus {
-  fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -579,7 +582,15 @@ img {
 
 @media screen and (max-width: 767px) {
   .contact-list__item:not(:first-child) {
-    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .contact-list__item:first-child {
+    margin-top: 64px;
+  }
+
+  .contact-list__item:last-child {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {

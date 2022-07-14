@@ -65,7 +65,9 @@
   }
 }
 .portfolio__item {
-  width: 450px;
+  @media screen and (min-width: $tel) {
+    width: 450px;
+  }
 
   @media screen and (min-width: $tabl) {
     width: 354px;
@@ -96,7 +98,9 @@
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -128,6 +132,10 @@
   top: 0;
   transform: translateY(101%);
   overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    overflow: scroll;
+  }
 
   @include df;
 
@@ -163,4 +171,5 @@
 
 .portfolio__text-wrap {
   padding: 20px 24px;
+  flex-grow: 1;
 }

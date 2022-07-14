@@ -4,13 +4,10 @@
 }
 
 .footer-flex {
-  @media screen and (min-width: $tabl) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
   @media screen and (min-width: $desk) {
-    flex-wrap: nowrap;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
   }
 }
 
@@ -67,11 +64,19 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: $tabl) {
-    margin-left: auto;
+    margin-right: 0;
   }
   @media screen and (min-width: $desk) {
     margin-left: 0;
     margin-bottom: 0;
+  }
+}
+
+.footer-flex--tablet {
+  @media screen and (min-width: $tabl), screen and (max-width: 1199) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -95,8 +100,8 @@
 .subscribe {
   @media screen and (min-width: $tabl), screen and (max-width: 1199) {
     width: 450px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: $desk) {

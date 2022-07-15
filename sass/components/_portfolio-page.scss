@@ -135,6 +135,7 @@
 
   @media screen and (max-width: 767px) {
     overflow: scroll;
+    align-items: normal;
   }
 
   @include df;

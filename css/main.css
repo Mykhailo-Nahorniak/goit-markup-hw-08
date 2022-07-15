@@ -90,7 +90,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1114,6 +1114,12 @@ img {
   background-color: #2f303a;
   padding: 60px 0px;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .footer-flex {
@@ -1125,7 +1131,11 @@ img {
 
 .footer__container {
   text-align: center;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .footer__container {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
@@ -1174,7 +1184,11 @@ img {
 
 .connect {
   margin-right: auto;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .connect {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .connect {
@@ -1193,6 +1207,7 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
@@ -1433,6 +1448,7 @@ img {
 @media screen and (max-width: 767px) {
   .overlay {
     overflow: scroll;
+    align-items: normal;
   }
 }
 .portfolio__link:hover .overlay, .portfolio__link:focus .overlay {

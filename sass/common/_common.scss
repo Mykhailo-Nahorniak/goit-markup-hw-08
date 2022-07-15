@@ -64,7 +64,7 @@ ul {
   // @media screen and (max-width: 767px) {
   //   width: 480px;
   // }
-  @media screen and (max-width: $desk) {
+  @media screen and (min-width: $desk) {
     padding-top: 94px;
     padding-bottom: 94px;
   }

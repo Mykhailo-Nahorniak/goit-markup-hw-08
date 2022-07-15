@@ -1210,6 +1210,11 @@ img {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-flex--tablet {
+    margin-bottom: 0;
+  }
+}
 
 .connect__title,
 .subscribe__title {

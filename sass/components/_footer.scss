@@ -88,6 +88,10 @@
     justify-content: space-around;
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: $desk) {
+    margin-bottom: 0;
+  }
 }
 
 .connect__title,

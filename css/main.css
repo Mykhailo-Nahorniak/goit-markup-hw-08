@@ -1234,11 +1234,16 @@ img {
   }
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1199) {
+@media screen and (min-width: 768px) {
   .subscribe {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-right: 0;
   }
 }
 

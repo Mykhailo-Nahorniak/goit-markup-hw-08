@@ -112,12 +112,16 @@
 }
 
 .subscribe {
-  @media screen and (min-width: $tabl), screen and (max-width: 1199) {
+  @media screen and (min-width: $tabl) {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
+  @media screen and (min-width: $desk) {
+    margin-right: 0;
+  }
 }
+
 @media screen and (min-width: $desk) {
   .subscribe__form {
     display: flex;
